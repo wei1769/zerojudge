@@ -6,10 +6,13 @@
 //  Copyright © 2020 Wei. All rights reserved.
 //
 
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int x , y ;
+    cin >> x >> y ;
+    cout << x+y <<endl;
 }
