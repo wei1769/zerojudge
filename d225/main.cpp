@@ -8,15 +8,17 @@ int main(){
 	while(cin >> N, N){
 		G=0;
 		for(i = 1;i <N;i++){
-			for(j = 1; j< N;j++)
+			for(j = i+1; j<= N;j++){
 				G+=GCD(i,j);
-		
-		}
+				}}
+
+
 		cout << G<<'\n';
 	}
 }
 int GCD(int i,int j ){
-	if(i)
-		return GCD(j%i,i);
-	return j;
+	if(j== 0 )
+        return i;
+    return GCD(j,i%j);
+
 }
