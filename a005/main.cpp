@@ -6,19 +6,15 @@ int main(int argc, const char * argv[]) {
     cout.tie(0);
     long long time ;
     long long number[5] ;
-    bool add = false ;
+    
     cin >> time ;
     for (long long  i = 0 ; i < time ; i++)
     {
+        bool add = false;
         for (long long  r = 0; r < 4 ; r++)
         {
             cin >> number[r];
             cout << number[r] << " ";
-            if (number[r] == 0)
-            {
-                add = true ;
-                continue ;
-            }
         }
         if (number[3] - number[2] == number[2] -number[1]) 
         {
