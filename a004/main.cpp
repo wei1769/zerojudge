@@ -9,7 +9,22 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    using namespace std ;
+    long long y = 0 ;
+    while(cin>>y)
+    {
+        if(y%4==0 && y%100!=0)
+        {
+            cout << "閏年\n" ;
+            continue; 
+        }
+        else if (y%400 == 0 )
+        {
+            cout <<"閏年\n";
+            continue; 
+        }
+        else 
+            cout <<"平年\n";
+    }
+
 }
