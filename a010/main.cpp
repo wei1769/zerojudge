@@ -10,13 +10,10 @@ int main()
     long  y = x ;
     for (long i = 2; i <= x; i = i + 1)
     {
-        if (i%2 == 0 && i != 2)
-        i++;
         if(x%i == 0)
         {
             time[i]++;
             x = x/i ;
-            
             i = i - 1;
         }
         if (x == 1)
